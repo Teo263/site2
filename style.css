@@ -1,57 +1,169 @@
+/* Resetare de bază */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri generale */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    padding: 0;
+    margin: 0;
 }
 
 header {
-    background: #c67214;
+    background-color: #2c3e50;
     color: white;
-    padding: 1em 0;
+    padding: 1.5rem 1rem;
     text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: white;
+header nav a {
     text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-.intro, .highlights {
-    margin-bottom: 20px;
-    background: #fff;
-    padding: 15px;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
+header nav a.active,
+header nav a:hover {
+    background-color: #34495e;
+}
+
+/* Secțiunea Intro */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    background-color: #eaecee;
+}
+
+.intro-text {
+    flex: 1;
+    text-align: center;
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text .button {
+    text-decoration: none;
+    background-color: #2c3e50;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.intro-text .button:hover {
+    background-color: #34495e;
+}
+
+.intro-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Secțiune Tematică */
+.themes {
+    padding: 2rem 1rem;
+    background-color: white;
+}
+
+.themes h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.theme-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-item img {
+    width: 100%; /* Ajustează lățimea pentru a se potrivi containerului */
+    height: 500px; /* Fixează înălțimea imaginii */
+    object-fit: cover; /* Asigură proporțiile corecte și un aspect frumos */
+    border-radius: 5px; /* Opțional, pentru colțuri rotunjite */
+}
+
+
+.theme-item h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.theme-item p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+}
+
+.theme-item .button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2c3e50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.theme-item .button:hover {
+    background-color: #34495e;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #343a40;
+    padding: 1rem;
+    background-color: #2c3e50;
     color: white;
+    margin-top: 2rem;
 }
-/* Highlight active menu item */
-nav ul li a.active {
-    font-weight: bold;
-    text-decoration: underline;
-}
+
 
 /* Timeline styling */
 .timeline {
