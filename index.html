@@ -11,6 +11,11 @@
     <header>
         <h1>România în al Doilea Război Mondial</h1>
         <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <ul class="menu">
                 <li><a href="index.html" class="active">Acasă</a></li>
                 <li><a href="cronologie.html">Cronologie</a></li>
@@ -62,5 +67,13 @@
     <footer>
         <p>&copy; 2024 România în al Doilea Război Mondial. Toate drepturile rezervate.</p>
     </footer>
+    <script>
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menu = document.querySelector(".menu");
+    
+        mobileMenu.addEventListener("click", () => {
+            menu.classList.toggle("show"); // Toggle the menu on and off
+        });
+    </script>
 </body>
 </html>

@@ -8,12 +8,17 @@
 </head>
 <body>
     <header>
-
+        <h1>România în al Doilea Război Mondial</h1>
         <nav>
-            <ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu">
                 <li><a href="index.html">Acasă</a></li>
                 <li><a href="cronologie.html" class="active">Cronologie</a></li>
-                <li><a href="figuri.html">Figuri cheie</a></li>
+                <li><a href="figuri.html">Figuri Istorice</a></li>
                 <li><a href="impact.html">Impact</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
             </ul>
@@ -75,5 +80,14 @@
     <footer>
         <p>&copy; 2024 Istorie Românească. Toate drepturile rezervate.</p>
     </footer>
+
+    <script>
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menu = document.querySelector(".menu");
+    
+        mobileMenu.addEventListener("click", () => {
+            menu.classList.toggle("show"); // Toggle the menu on and off
+        });
+    </script>
 </body>
 </html>
