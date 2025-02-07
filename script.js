@@ -61,18 +61,21 @@ window.addEventListener('pageshow', (event) => {
 
 
 var map = L.map('map', {
-    center: [54, 15],
-    zoom: 4, // Default zoom level
+    center: [50, 15], // Centered on Europe
+    zoom: L.Browser.mobile ? 3 : 4, // Adjusted zoom levels for Europe
     zoomControl: false,
     dragging: !L.Browser.mobile,
     scrollWheelZoom: false,
     doubleClickZoom: false,
     boxZoom: false,
     touchZoom: false,
-    maxBounds: [[72, -25], [32, 50]],
+    // Restrict bounds to Europe
+    maxBounds: [[35, -10], [70, 40]], // [[South, West], [North, East]]
     maxBoundsViscosity: 1.0
-}).setView(L.Browser.mobile ? [54, 20] : [54, 15], L.Browser.mobile ? 4 : 3); // Adjust view for mobile
-
+}).setView(
+    L.Browser.mobile ? [50, 15] : [50, 15], // Same center for both
+    L.Browser.mobile ? 3 : 4 // Adjusted zoom levels
+);
 // Custom tile layer with modern style
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; OpenStreetMap contributors & Carto'
