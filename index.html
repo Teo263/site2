@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICTATURA UMBRELOR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>DICTATURA UMBRELOR</h1>
+        <button id="menu-toggle">☰</button>
+    </header>
+    <nav id="side-menu">
+        <button id="close-menu">&times;</button>
+        <ul>
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="fascism.html">Fascism</a></li>
+            <li><a href="nazism.html">Nazism</a></li>
+            <li><a href="comunism.html">Comunism</a></li>
+            <li><a href="anarhism.html">Anarhism</a></li>
+            <li><a href="nationalism.html">Naționalism</a></li>
+            <li><a href="other.html">Extremismul Modern</a></li>
+            <li><a href = "concluzie.html">Soluția</a></li>
+            <li><a href = "bibliografie.html">Bibliografie</a></li>
+            <li><a href = "Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section> 
+            <h2> Extremismul si cum a apărut</h2>
+            <p>Extremismul constă în idei sau acțiuni considerate extreme sau neadpatate la lumea relaa. Este vorba despre partide sau grupari politice care lauda valori contestate si care vor sa puna in practica metode extreme. Atunci cand vorbim de actiuni, cel mai adesea vorbim despre metode violente, agreisve care au ca scop o schimbare radicala</p>
+            <p>Teoriile totalitare sunt caracterizate printr-o poziție agresivă, care se pot termina cu conflicte militare interstatale.</p>
+            <p>Primele ideologii extremiste, așa cum le înțelegem astăzi, au început să prindă contur în perioada modernă, în principal în secolele XVIII-XIX, fiind influențate de schimbări sociale, economice și politice majore.
+            Au început să se manifeste puternic în Europa Occidentală și Centrală, începând cu sfârșitul secolului XVIII. Revoluțiile, conflictele naționale și schimbările sociale majore au fost factori cheie care au contribuit la apariția lor.</p>
+        </section>
+        
+        <section>
+            <h2>Tipuri de Extremism</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <a href="fascism.html">
+                        <div class="card-content">
+                            <h3>Fascism</h3>
+                            <p>O ideologie politică autoritară, caracterizată prin naționalism extrem și militarism.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="nazism.html">
+                        <div class="card-content">
+                            <h3>Nazism</h3>
+                            <p>O formă de fascism asociată cu regimul lui Adolf Hitler, caracterizată prin rasism și antisemitism.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="comunism.html">
+                        <div class="card-content">
+                            <h3>Comunism</h3>
+                            <p>O ideologie politică și economică care promovează o societate fără clase sociale și fără stat.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="anarhism.html">
+                        <div class="card-content">
+                            <h3>Anarhism</h3>
+                            <p>O ideologie politică și filozofică ce susține abolirea statului și a ierarhiilor autoritare.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="nationalism.html">
+                        <div class="card-content">
+                            <h3>Naționalism</h3>
+                            <p>O ideologie care subliniază importanța apartenenței la o națiune și promovarea identității naționale.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="other.html">
+                        <div class="card-content">
+                            <h3>Extremismul Modern</h3>
+                            <p>Un fenomen complex și multidimensional, manifestându-se sub diverse forme politice, religioase, sociale și culturale.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="map-container">
+            <h2>Hartă Interactivă</h2>
+            
+            <div id="map"></div>
+            </section>
+            <!-- Leaflet JS -->
+            <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+            <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+            <script src="script.js"></script>
+    </main>
+    
+    
+</body>
+
+</html>
